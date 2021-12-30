@@ -1,4 +1,3 @@
-from typing import final
 from geopy.geocoders import Nominatim
 from geopy import distance
 import numpy as np
