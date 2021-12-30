@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>TripPlanner</title>
+    <link rel="shortcut icon" href="{% static 'tripPlannerLogo.png' %}" type="image/x-icon">  
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Unicons CDN Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
+    />
+  </head>
+  <body>
+    <script></script>
+    <div class="wrapper">
+      <div class="title">
+        <img src="{% static 'tripPlannerLogo.png' %}" alt="icon" />
+        <h2>TripPlanner</h2>
+      </div>
+      <div class="content">
+        Distance from source is {{minDistance}}
+        <br />
+        <br />
+        The path is {{path}}
+        <br />
+        <br />
+        Note:-The Distance can be &plusmn; 50km, Since the numbers are Big and
+        the Distances are aerial distance hence will be less than road distance.
+      </div>
+    </div>
+    <script src="{% static 'script.js' %}"></script>
+  </body>
+</html>
